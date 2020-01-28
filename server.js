@@ -15,8 +15,8 @@ const PORT = process.env.PORT || 4000;
 
 app.get('/', (request, response) => {
     response.send(`
-     <h1>Tiki Bar Root Route</h1>
-     `)
+        <h1>Tiki Bar Root Route</h1>
+    `)
 })
 
 // API ROUTES =============== //
