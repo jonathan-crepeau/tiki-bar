@@ -1,0 +1,25 @@
+{
+  "name": "tiki-bar",
+  "version": "1.0.0",
+  "description": "Newsletter subscription service for user to learn about happy hours",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathan-crepeau/tiki-bar.git"
+  },
+  "keywords": [
+    "newsletter",
+    "subscription",
+    "user"
+  ],
+  "author": "jcrepeau jroman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonathan-crepeau/tiki-bar/issues"
+  },
+  "homepage": "https://github.com/jonathan-crepeau/tiki-bar#readme"
+}
