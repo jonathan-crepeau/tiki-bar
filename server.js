@@ -42,6 +42,15 @@ app.post('/api/v1/users', (request, response) => {
     });
 });
 
+// DELETE Remove Single User
+
+app.delete('/api/v1/users/:id', (request, response) => {
+    db.User.findByIdAndDelete(request.params.id, (error, deleteUser) => {
+        if (error) return response.status(500).json({message: 'Something is wrong, girl.'})
+        response.status(200).json(deleteUser);
+    });
+});
+
 // START SERVER =============== //
 
 app.listen(PORT, () => {
