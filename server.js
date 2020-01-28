@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 
 // INTERNAL MODULES =============== //
+const db = require('./models');
 
 // CONFIGURATION VARIABLES =============== //
 const PORT = process.env.PORT || 4000;
