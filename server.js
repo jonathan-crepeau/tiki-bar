@@ -6,6 +6,8 @@ const app = express();
 
 // INTERNAL MODULES =============== //
 const db = require('./models');
+const logger = require('./middleware/logger');
+const formatter = require('./middleware/formatter');
 
 // CONFIGURATION VARIABLES =============== //
 const PORT = process.env.PORT || 4000;
@@ -31,31 +33,32 @@ app.get('/', (request, response) => {
 
 // API ROUTES =============== //
 
-// GET All Users
-app.get('/api/v1/users', (request, response) => {
-    db.User.find({}, (error, indexUsers) => {
-        if (error) return response.status(500).json({message: 'Something is not right.'})
-        response.status(200).json(indexUsers);
-    });
-});
+// GET Index All Users
+
+// app.get('/api/v1/users', (request, response) => {
+//     db.User.find({}, (error, indexUsers) => {
+//         if (error) return response.status(500).json({message: 'Something is not right.'})
+//         response.status(200).json(indexUsers);
+//     });
+// });
 
 // POST Create Single User
 
-app.post('/api/v1/users', (request, response) => {
-    db.User.create(request.body, (error, createUser) => {
-        if (error) return response.status(500).json({message: 'Something went wrong. Please try again.'})
-        response.status(200).json(createUser);
-    });
-});
+// app.post('/api/v1/users', (request, response) => {
+//     db.User.create(request.body, (error, createUser) => {
+//         if (error) return response.status(500).json({message: 'Something went wrong. Please try again.'})
+//         response.status(200).json(createUser);
+//     });
+// });
 
 // DELETE Remove Single User
 
-app.delete('/api/v1/users/:id', (request, response) => {
-    db.User.findByIdAndDelete(request.params.id, (error, deleteUser) => {
-        if (error) return response.status(500).json({message: 'Something is wrong, girl.'})
-        response.status(200).json(deleteUser);
-    });
-});
+// app.delete('/api/v1/users/:id', (request, response) => {
+//     db.User.findByIdAndDelete(request.params.id, (error, deleteUser) => {
+//         if (error) return response.status(500).json({message: 'Something is wrong, girl.'})
+//         response.status(200).json(deleteUser);
+//     });
+// });
 
 // START SERVER =============== //
 
