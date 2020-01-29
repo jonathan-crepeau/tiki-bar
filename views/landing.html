@@ -4,31 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- jQuery -->
+    <script defer src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
     <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/landing.css">
     <!-- Main JS -->
-    <script src="scripts/landing.js"></script>
+    <script defer src="scripts/landing.js"></script>
     <title>Tiki Bar</title>
+    <link href="https://fonts.googleapis.com/css?family=Concert+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="wrapper">
-    <nav>
+    <header>
+        <h2 id="header1">HIVE 55 TIKI BAR</h2>
+        <h2 id="header2">Cocktail Menu</h2>
+        <h2 id="header3">About</h2>
+        <h2 id="header4"><img id="glass" src="/images/Search.png" /></h2>
+    </header>
+    <!-- <nav>
         <ul class="nav">
             <li class="bar">HIVE 55 TIKI BAR</li>
             <li class="menu">Cocktail Menu</li>
             <li class="about">About</li>
             <li class="search"></li>
         </ul>
-    </nav>
+    </nav> -->
     <main>
-        <section class="container">
-            <h1>DRINK & ENJOY</h1>
-            <h2>HAPPY HOUR</h2>
+        <h1 id="title1" class="stroke">DRINK & ENJOY</h1>
+        <h1 id="title2">HAPPY HOUR</h1>
+        <div class="container">
             <p>TIKI BAR is a Tiki bar located in the Financial District of San Francisco housed in a historical space that was once home to the infamous Tiki Bob's Mainland Rendezvous. As you enter TIKI BAR you find yourself in the belly of a wooden ship that will transport you off the streets of San Francisco and deliver you to an exotic escape.</p>
-        </section>
+        </div>
         <img class="white" src="images/Leaf.png" alt="white leaf">
         <img class="drink" src="images/Landing_Drink IMG.png" alt="drink">
-        <button>>>>Sign Up For Newsletter</button>
+        <button type="submit" id="interestButton">>>>Sign Up For Newsletter</button>
         <img class="red" src="images/Leaf Button_2.png" alt="red leaf">
     </main>
     </div>

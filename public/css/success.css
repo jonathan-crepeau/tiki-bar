@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+header {
+    height: 10%;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+}
+
+#header1 {
+    position: absolute;
+    left: 0%;
+    padding: 20px;
+}
+
+#header2 {
+    position: absolute;
+    left: 20%;
+    padding: 20px;
+}
+
+#header3 {
+    position: absolute;
+    left: 57%;
+    padding: 20px;
+}
+
+#header4 {
+    position: absolute;
+    left: 65%;
+    padding: 20px;
+}
+
+
+/* .nav {
+    list-style-type: none;
+} */
+
+/* .bar {
+    position: absolute;
+    left: 10.42%;
+    right: 74.72%;
+    top: 36.25%;
+    bottom: 26.25%;
+
+    /* font-family: Carino Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px; */
+
+    /* identical to box height, or 125% */
+    /* letter-spacing: 1px; */
+
+/* Bright */
+    /* color: #F5F9FC;
+} */ 
+
+/* .menu {
+    position: absolute;
+    left: 30.76%;
+    right: 57.78%;
+    top: 36.25%;
+    bottom: 26.25%;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+
+    /* identical to box height, or 125% */
+    /* letter-spacing: 1px; */
+
+/* Bright */
+    /* color: #F5F9FC;
+} */
+
+.about {
+    position: absolute;
+    left: 77.99%;
+    right: 17.15%;
+    top: 36.25%;
+    bottom: 26.25%;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+
+/* identical to box height, or 125% */
+    text-align: right;
+    letter-spacing: 1px;
+
+/* Bright */
+    color: #F5F9FC;
+}
+
+.search {
+
+}
+
+body {
+    /* background-color: teal; */
+    background-image: url(../images/Background\ Image.png);
+    font-family: 'Lato', sans-serif;
+}
+
+#wrapper {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+h1 {
+    color: white;
+    position: absolute;
+    left: 17.22%;
+    right: 21.94%;
+    top: 17.56%;
+    bottom: 57.33%;
+
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 3px;
+}
+
+h2 {
+    position: absolute;
+    left: 10.42%;
+    right: 45.42%;
+    top: 34.11%;
+    bottom: 54.78%;
+
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 3px;
+
+    color: #FFFFFF;
+}
+
+p {
+    color: white;
+    position: absolute;
+    left: 10.42%;
+    right: 57.78%;
+    top: 47.22%;
+    bottom: 35.67%;
+
+/* Text/Medium */
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 25px;
+/* or 147% */
+
+    letter-spacing: 0.5px;
+
+    color: #FFFFFF;
+}
+
+button {
+    position: absolute;
+    width: 265px;
+    height: 25px;
+    left: calc(50% - 265px/2 - 417.5px);
+    top: calc(50% - 25px/2 + 205.5px);
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+/* identical to box height, or 125% */
+
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration-line: underline;
+    cursor: pointer;
+
+    /* color: #FFFFFF; */
+}
+
+.red {
+    position: absolute;
+    width: 91.46px;
+    height: 106.55px;
+    left: 9%;
+    top: 75%;
+    transform: rotate(120deg);
+
+/* Red */
+
+/*     background: #FF564A;
+    border-radius: 1px;
+    transform: rotate(-37.94deg); */
+}
+
+.drink {
+    position: absolute;
+    width: 340px;
+    height: 580px;
+    left: 57%;
+    top: 15%;
+    z-index: 1;
+
+    /* background: url(Brittni-Bell-Photo-Denver-Food-and-Lifestyle-Photographer_-Pony-Up-_-Tropical-Cocktail4.jpg); */
+}
+
+.white {
+    position: absolute;
+    width: 439.03px;
+    height: 546.8px;
+    left: 75%;
+    top: 12%;
+    transform: rotate(12deg);
+    z-index: 2;
+
+    /* border: 3px solid #FFFFFF;
+    border-radius: 1px;
+    transform: rotate(33.72deg); */
+}
+
+#title1 {
+    font-family: 'Concert One', cursive;
+    font-size: 600%;
+    color: white;
+    z-index: 3;
+    letter-spacing: 4px;
+    position: absolute;
+    top: 10%;
+}
+
+#title2 {
+    font-family: 'Concert One', cursive;
+    font-size: 600%;
+    color: white;
+    z-index: 3;
+    position: absolute;
+    left: 10%;
+    top: 55%;
+}
+
+.stroke {
+    color: white;
+  -webkit-text-fill-color: rgba(0,0,225,0);
+  -webkit-text-stroke-width: .01px;
+  -webkit-text-stroke-color: white;
+}
+
+#interestButton {
+    position: absolute;
+    top: 80%;
+    left: 13%;
+    color: white;
+    background-color: transparent;
+    border: none;
+    z-index: 3;
+}
+
+.container p {
+    position: absolute;
+    top: 55%;
+    font-family: 'Lato', sans-serif;
+}
+
+#glass {
+    height: 80%;
+    position: absolute;
+    top: -15%;
+
+}

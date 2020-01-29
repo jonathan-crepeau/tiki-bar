@@ -7,13 +7,43 @@
     outline: 0;
 }
 
-
-
-.nav {
-    list-style-type: none;
+header {
+    height: 10%;
+    width: 100vw;
+    display: flex;
+    position: fixed;
 }
 
-.bar {
+#header1 {
+    position: absolute;
+    left: 0%;
+    padding: 20px;
+}
+
+#header2 {
+    position: absolute;
+    left: 20%;
+    padding: 20px;
+}
+
+#header3 {
+    position: absolute;
+    left: 57%;
+    padding: 20px;
+}
+
+#header4 {
+    position: absolute;
+    left: 65%;
+    padding: 20px;
+}
+
+
+/* .nav {
+    list-style-type: none;
+} */
+
+/* .bar {
     position: absolute;
     left: 10.42%;
     right: 74.72%;
@@ -27,13 +57,13 @@
     line-height: 30px; */
 
     /* identical to box height, or 125% */
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
 
 /* Bright */
-    color: #F5F9FC;
-}
+    /* color: #F5F9FC;
+} */ 
 
-.menu {
+/* .menu {
     position: absolute;
     left: 30.76%;
     right: 57.78%;
@@ -47,11 +77,11 @@
     line-height: 30px;
 
     /* identical to box height, or 125% */
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
 
 /* Bright */
-    color: #F5F9FC;
-}
+    /* color: #F5F9FC;
+} */
 
 .about {
     position: absolute;
@@ -97,20 +127,9 @@ h1 {
     top: 17.56%;
     bottom: 57.33%;
 
-/* Hero Text */
-
-    /* font-family: Carino Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 95px;
-    line-height: 100px; */
-/* or 105% */
-
     display: flex;
     align-items: flex-end;
     letter-spacing: 3px;
-
-    /* border: 3px solid #FFFFFF; */
 }
 
 h2 {
@@ -119,15 +138,6 @@ h2 {
     right: 45.42%;
     top: 34.11%;
     bottom: 54.78%;
-
-/* Hero Text */
-
-    /* font-family: Carino Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 95px;
-    line-height: 100px; */
-/* identical to box height, or 105% */
 
     display: flex;
     align-items: flex-end;
@@ -175,16 +185,18 @@ button {
     text-align: center;
     letter-spacing: 1px;
     text-decoration-line: underline;
+    cursor: pointer;
 
     /* color: #FFFFFF; */
 }
 
 .red {
     position: absolute;
-    width: 61.46px;
-    height: 76.55px;
-    left: 137.6px;
-    top: 643.46px;
+    width: 91.46px;
+    height: 106.55px;
+    left: 9%;
+    top: 75%;
+    transform: rotate(120deg);
 
 /* Red */
 
@@ -195,10 +207,11 @@ button {
 
 .drink {
     position: absolute;
-    width: 360px;
-    height: 600px;
-    left: 336.23px;
-    top: 65.33px;
+    width: 340px;
+    height: 580px;
+    left: 57%;
+    top: 15%;
+    z-index: 1;
 
     /* background: url(Brittni-Bell-Photo-Denver-Food-and-Lifestyle-Photographer_-Pony-Up-_-Tropical-Cocktail4.jpg); */
 }
@@ -207,10 +220,62 @@ button {
     position: absolute;
     width: 439.03px;
     height: 546.8px;
-    left: 1288.12px;
-    top: 73px;
+    left: 75%;
+    top: 12%;
+    transform: rotate(12deg);
+    z-index: 2;
 
     /* border: 3px solid #FFFFFF;
     border-radius: 1px;
     transform: rotate(33.72deg); */
+}
+
+#title1 {
+    font-family: 'Concert One', cursive;
+    font-size: 600%;
+    color: white;
+    z-index: 3;
+    letter-spacing: 4px;
+    position: absolute;
+    top: 10%;
+}
+
+#title2 {
+    font-family: 'Concert One', cursive;
+    font-size: 600%;
+    color: white;
+    z-index: 3;
+    position: absolute;
+    left: 10%;
+    top: 55%;
+}
+
+.stroke {
+    color: white;
+  -webkit-text-fill-color: rgba(0,0,225,0);
+  -webkit-text-stroke-width: .01px;
+  -webkit-text-stroke-color: white;
+}
+
+#interestButton {
+    position: absolute;
+    top: 80%;
+    left: 13%;
+    color: white;
+    background-color: transparent;
+    border: none;
+    z-index: 3;
+}
+
+.container p {
+    position: absolute;
+    top: 55%;
+    font-family: 'Lato', sans-serif;
+}
+
+#glass {
+    height: 80%;
+    position: absolute;
+    top: -15%;
+
 }
