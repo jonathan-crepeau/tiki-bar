@@ -4,17 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Newsletter Signup</title>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery -->
+    <script defer src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <!-- Main JS -->
+    <script defer src="scripts/landing.js"></script>
+    <script defer src="scripts/signup.js"></script>
+    <title>Tiki Bar</title>
 </head>
 <body>
-    <main>
-        <section class="container">
-            <h1>Newsletter Signup</h1>
-        </section>
-    </main>
-    
-    <footer>
-        Est. 2020
-    </footer>
+    <div id="wrapper">
+    <nav>
+        <ul class="nav">
+            <li class="bar">HIVE 55 TIKI BAR</li>
+            <li class="menu">Cocktail Menu</li>
+            <li class="about">About</li>
+            <li class="search"></li>
+        </ul>
+    </nav>
+    <section>
+        <form id="form">
+            <div class="first">
+                <label for="firstName">First Name</label>
+                <input type="First Name" id="firstName" name="firstName" placeholder="First Name">
+            </div>
+            <div class="last">
+                <label for="lastName">Last Name</label>
+                <input type="Last Name" id="lastName" name="lastName" placeholder="Last Name">
+            </div>
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+            </div>
+            <input id="submit" type="submit" value="Submit" />
+        </form>
+        <p>Subscribing to this newsletter means you're okay with our Terms of Service, Privacy Policy, and our default Notification Settings.</p>
+    </section>
+    </div>
 </body>
 </html>
