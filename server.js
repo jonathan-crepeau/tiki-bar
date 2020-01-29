@@ -5,6 +5,8 @@ const bodyParser = require('body-parser');
 
 // INTERNAL MODULES =============== //
 const db = require('./models');
+const logger = require('./middleware/logger');
+const formatter = require('./middleware/formatter');
 
 // CONFIGURATION VARIABLES =============== //
 const PORT = process.env.PORT || 4000;
