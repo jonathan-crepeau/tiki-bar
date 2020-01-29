@@ -25,23 +25,11 @@ onSuccess = response => {
 
 $(document).ready(function() {
 
-$.ajax ({
-    method: 'GET',
-    url: 'http://localhost:4000/api/v1/subscribers',
-    success: onSuccess,
-    error: error => console.log(error),
-})
-
-// fetch('http://localhost:4000/api/v1/subscribers')
-//     .then(response => {
-//         if (response.status === 200) return response.json();
-//         if (response.status !== 200) return response.statusText();
-//     })
-//     .then(json => {
-//         console.log(json);
-//     })
-//     .catch(error => {
-//         console.log(error);
-//     });
+    $.ajax ({
+        method: 'GET',
+        url: 'http://localhost:4000/api/v1/subscribers',
+        success: onSuccess,
+        error: error => console.log(error),
+    });
 
 });

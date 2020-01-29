@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    height: 7vh;
+    width: 100vw;
+    background-color: yellow;
+    display: flex;
+}
+
+.header__left {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header__right {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    margin-left: auto;
+}
