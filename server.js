@@ -2,12 +2,10 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const app = express();
 
 // INTERNAL MODULES =============== //
 const db = require('./models');
-const logger = require('./middleware/logger');
-const formatter = require('./middleware/formatter');
+const routes = require('./routes');
 
 // CONFIGURATION VARIABLES =============== //
 const PORT = process.env.PORT || 4000;
@@ -20,45 +18,14 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 
 // HTML ROUTES =============== //
-REVIEW  // Review to make sure this is the correct HTML Route
-app.use('/', routes.api);
 
-// ROOT ROUTE //
+app.use('/', routes.views);
 
-app.get('/', (request, response) => {
-    response.send(`
-        <h1>Tiki Bar Root Route</h1>
-    `)
-})
 
 // API ROUTES =============== //
 
-// GET Index All Users
+app.use('/api/v1/subscribers', routes.subscriber);
 
-// app.get('/api/v1/users', (request, response) => {
-//     db.User.find({}, (error, indexUsers) => {
-//         if (error) return response.status(500).json({message: 'Something is not right.'})
-//         response.status(200).json(indexUsers);
-//     });
-// });
-
-// POST Create Single User
-
-// app.post('/api/v1/users', (request, response) => {
-//     db.User.create(request.body, (error, createUser) => {
-//         if (error) return response.status(500).json({message: 'Something went wrong. Please try again.'})
-//         response.status(200).json(createUser);
-//     });
-// });
-
-// DELETE Remove Single User
-
-// app.delete('/api/v1/users/:id', (request, response) => {
-//     db.User.findByIdAndDelete(request.params.id, (error, deleteUser) => {
-//         if (error) return response.status(500).json({message: 'Something is wrong, girl.'})
-//         response.status(200).json(deleteUser);
-//     });
-// });
 
 // START SERVER =============== //
 
