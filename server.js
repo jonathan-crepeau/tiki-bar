@@ -2,6 +2,7 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+const app = express();
 
 // INTERNAL MODULES =============== //
 const db = require('./models');
@@ -12,6 +13,9 @@ const PORT = process.env.PORT || 4000;
 // MIDDLEWARE =============== //
 
 app.use(bodyParser.json());
+
+// SERVER PUBLIC DIRECTORY //
+app.use(express.static(__dirname + '/public'));
 
 // HTML ROUTES =============== //
 
