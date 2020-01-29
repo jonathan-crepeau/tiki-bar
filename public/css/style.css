@@ -194,7 +194,6 @@ button {
 }
 
 .drink {
-    /* object-fit: inherit; */
     position: absolute;
     width: 360px;
     height: 600px;
