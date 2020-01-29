@@ -18,6 +18,8 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 
 // HTML ROUTES =============== //
+REVIEW  // Review to make sure this is the correct HTML Route
+app.use('/', routes.api);
 
 // ROOT ROUTE //
 
